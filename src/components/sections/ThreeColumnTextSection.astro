@@ -39,6 +39,11 @@ import Container from '../core/Container.astro';
     align-items: center;
   }
 
+  .three-col-text__column :global(img) {
+    border-radius: calc(var(--theme-shape-radius) /2);
+    transition: border-radius var(--theme-transition);
+  }
+
   @media(max-width: 1200px) {
     .three-col-text__section {
       --column-count: 2;

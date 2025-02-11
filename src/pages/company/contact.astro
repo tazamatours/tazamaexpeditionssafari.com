@@ -15,7 +15,7 @@ const seo = {
 			<div class="contact-hero__text-section">
 				<h1>Contact Us</h1>
 				<p>
-					Anna is your first point of contact, or you can message us on Instagram or Facebook.
+					Anna is your first point of contact, via Whatsapp or Email. You can message us on Instagram or Facebook!
 				</p>
 				<div>
 					<p>
@@ -26,9 +26,10 @@ const seo = {
 					</p>
 				</div>
 			</div>
-			<!-- <div class="col-2__container">
-				<ContactForm />
-			</div> -->
+			<div class="col-2__container">
+				<!-- <ContactForm /> -->
+				 <img src="/assets/images/truck-driving.jpg" />
+			</div>
 		</section>
 	</Container>
 </Layout>
@@ -53,6 +54,10 @@ const seo = {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+	.col-2__container :global(img) {
+  	border-radius: calc(var(--theme-shape-radius));
+  	transition: border-radius var(--theme-transition);
 	}
 	@media (max-width: 768px) {
 		.contact-hero__section {

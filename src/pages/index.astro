@@ -8,6 +8,7 @@ import {
 	YouTubeEmbedSection,
 	StickyTextImageSection,
 	CtaCardSection,
+Container,
 } from '@components/odyssey-theme';
 import Layout from '../layouts/Page.astro';
 import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
@@ -32,13 +33,13 @@ const seo = {
 				</p>
 		</div>
 		<div slot="btns-container">
-			<!-- <Button href="/experiences" customIcon
-			>Explore Trips
+			<Button href="/about" customIcon
+			>Meet Anna
 				<Fragment slot="icon">
 					<Icon name="ic:baseline-chevron-right"/>
 				</Fragment>
-			</Button> -->
-			<Button href="/about" unelevated>Meet Anna</Button>
+			</Button>
+			<!-- <Button href="/about" unelevated>Meet Anna</Button> -->
 		</div>
 		<picture slot="image-container">
 			<img
@@ -49,82 +50,69 @@ const seo = {
 		</picture>
 	</TextAndImageHero>
 
-	<!-- <CustomerQuoteSection
-		quoteText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero nobis? Voluptas assumenda, voluptatibus commodi qui ducimus delectus praesentium maiores, impedit iure labore ratione, ea facilis numquam doloremque aperiam aspernatur."
-		customerName="Happy Customer"
+	<CustomerQuoteSection
+	quoteText="Anna was an incredible host and made our trip to Tanzania so special. We first arrived on Valentines day and our room was beautifully decorated with rose petals. We took an incredible safari to both the Serengeti and Ngorongoro Crater, sang songs making coffee in a trail near Moshi and found a handbag at a small shop in Arusha. Our trip was unforgettable thanks to Anna and we hope to visit again!"
+	customerName="Laurie &amp; Henry (Feb 2022)"
 	/>
-
 	<ThreeColumnTextSection>
 		<div slot="column-1-body">
-			<h2>Why?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
+			<img src="/assets/images/truck-by-elephant.jpg" />
 		</div>
-		<Button slot="column-1-cta">Learn More</Button>
 		<div slot="column-2-body">
-			<h2>How?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
+			<img src="/assets/images/testimonial-red-dress.jpg" />
 		</div>
-		<Button slot="column-2-cta" outlined>Learn More</Button>
 		<div slot="column-3-body">
-			<h2>What?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
+			<img src="/assets/images/tent-fancy.jpg" />
 		</div>
-		<Button slot="column-3-cta">Learn More</Button>
 	</ThreeColumnTextSection>
 
-	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded
-	/>
+	<!-- <YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded
+	/> -->
 
 	<StickyTextImageSection>
 		<div slot="text-container">
-			<h2>Features</h2>
-			<h3>SEO</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-			<h3>Responsive</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-			<h3>Themeable</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
+			<h2>Our Favorite Destinations</h2>
 		</div>
-		<picture slot="image-container">
+		<div slot="image_grid">
+			<div>
+				<h3>Ngorongoro</h3> 
+				<p>The Ngorongoro Crater, a UNESCO World Heritage Site, is a vast volcanic caldera teeming with wildlife. It offers unparalleled game viewing opportunities, with a high concentration of animals including the Big Five.</p>
+			</div>
+			<div>
+				<h3>Manyara</h3> 
+				<p>Lake Manyara National Park is known for its diverse landscapes, from acacia woodlands to lush forests and the soda lake itself. It's famous for its tree-climbing lions and large flocks of flamingos.</p>
+			</div>
+			<div>
+				<h3>Serengeti</h3> 
+				<p>The Serengeti National Park is a world-renowned safari destination, famous for the annual Great Migration of wildebeest and zebra. It's also home to a variety of predators, including lions, leopards, and cheetahs.</p>
+			</div>
+			<div>
+				<h3>Tarangire</h3> 
+				<p>Tarangire National Park is known for its large elephant populations and iconic baobab trees. During the dry season, it attracts a high concentration of wildlife, making it excellent for game viewing.</p>
+			</div>
 			<img
-				src="/assets/images/landing-1/landing-sticky.jpg"
-				alt="Astro Odyssey"
+				src="/assets/images/sunset.jpg"
+				alt="Sunset on the Safari"
 				loading="lazy"
 			/>
+			<div>
+				<h3>Kilimanjaro Mountains</h3> 
+				<p>Mount Kilimanjaro, Africa's highest peak, is a majestic sight. Climbing it is a challenging but rewarding experience.</p>
+			</div>
+			<div>
+				<h3>Zanzibar</h3> 
+				<p>Zanzibar is an archipelago in the Indian Ocean, known for its beautiful beaches, historic Stone Town, and vibrant culture. It offers a mix of relaxation, adventure, and cultural experiences.</p>
+			</div>
+			<div>
+				<h3>Mount Meru</h3> 
+				<p>Mount Meru, located in Arusha National Park, is Tanzania's second-highest peak. It provides a challenging climb with stunning views and diverse wildlife.</p>
+			</div>
+		</div>
+		<picture slot="image-container">
 		</picture>
 	</StickyTextImageSection>
 
-	<CtaCardSection
+	<!-- <CtaCardSection
 		background="var(--theme-surface-2)"
 		color="var(--theme-on-surface-2)"
 	>

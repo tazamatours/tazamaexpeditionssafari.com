@@ -9,6 +9,9 @@ const {reversed} = Astro.props;
     <div class="sticky-text-image__text">
       <slot name="text-container"></slot>
     </div>
+    <div class="sticky-text-image__image_grid">
+      <slot name="image_grid"></slot>
+    </div>
     <div class="sticky-text-image__image">
       <slot name="image-container"></slot>
     </div>
@@ -20,12 +23,17 @@ const {reversed} = Astro.props;
   .sticky-text-image__section {
     margin: calc(var(--section-margin) * 2) auto;
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    /* grid-template-columns: 6fr 4fr; */
     position: relative;
     gap: 2rem;
   }
-  .sticky-text-image__section--reversed {
+  /* .sticky-text-image__section--reversed {
     grid-template-columns: 4fr 6fr;
+  } */
+  .sticky-text-image__image_grid :global(> div) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
   }
   .sticky-text-image__section--reversed .sticky-text-image__text {
     order: 2;
