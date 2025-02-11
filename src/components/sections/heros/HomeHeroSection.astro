@@ -5,35 +5,32 @@ import settings from '../../../config/settings.js';
 import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 ---
 
+
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
+				<h1>Welcome to Tanzania</h1>
 				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
+					We provide safe, trustworthy and knowledgable safari experiences of all kinds. We can plan your entire trip including tours, transportation, accommodation and food. Our guides are experts in hospitality. All you have to say is yes to your next great adventure!
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" customIcon
-						>Get Started
+					<Button href="/experiences" customIcon
+						>Explore Trips
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+					<Button href="/about" unelevated>Meet Anna</Button>
 				</div>
         {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
 					<img
-						src="/assets/images/home/classic-hero.jpg"
-						alt="Astro Odyssey"
-						id="home-hero-image"
+						src="/assets/images/home/group-photo-smiles.jpg"
+						alt="One of our happy tour groups on Safari"
+						id="group-photo-safari"
 					/>
 				</picture>
 		</div>

@@ -95,7 +95,7 @@ export class ThemeSwitcher extends LitElement {
 			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				this._setTheme('dark');
 			} else{ // Set to default/light theme if no specification, or light theme is specified
-				this._setTheme('default');
+				this._setTheme('earth');
 			}
     		
     }

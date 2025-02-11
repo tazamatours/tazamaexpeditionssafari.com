@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components'
+import Image from 'astro/components/Image.astro';
 const { navData, rightMenu } = Astro.props;
 ---
 
@@ -51,6 +52,13 @@ const { navData, rightMenu } = Astro.props;
   </button>
   <a class="header-logo__link" href="/">
     <slot name="logo">
+      <picture>
+      <img 
+        src="/assets/images/hero-tazama.png" 
+        alt="Tazama Expeditions Logo"
+        id="logo-image"
+      />
+    </picture>
     </slot>
   </a>
   </div>
